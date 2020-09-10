@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    body {
+      font-family: sans-serif;
+    }
+    .weather-form {
+      position: relative;
+      text-align: center;
+    }
+
+    /* .container {
+      position: relative;
+      text-align: center;
+      border: 1px solid black;
+    } */
+
+    input, button {
+      display: block;
+      margin: 10px auto;
+      width: 250px;
+    }
+
+    #location-input {
+      padding: 10px;
+      border: 1px solid grey;
+      border-radius: 5px;
+    }
+
+    #submit-btn {
+      padding: 20px;
+      color: white;
+      background-color: #044757;
+      border: none;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    #submit-btn:hover {
+      background-color: #076980;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form class="weather-form">
+        <label for="location-input">Choose a location:</label>
+        <input id="location-input" type="text" name="location-input">
+        <button id="submit-btn" type="button" name="submit-btn">SUBMIT</button>
+      </form>
+      <!-- <ul class="container">
+
+      </ul> -->
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
